@@ -1,0 +1,24 @@
+
+if SHIELD_SPLITKB_HALCYON_KYRIA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Kyria"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPLITKB_HALCYON_KYRIA_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Kyria Right"
+
+endif
+
+if SHIELD_SPLITKB_HALCYON_KYRIA
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,15 @@
+file_format: "1"
+id: splitkb_halcyon_kyria
+name: splitkb.com Halcyon Kyria
+type: shield
+url: https://splitkb.com/products/halcyon-kyria
+requires: [halcyon]
+exposes: [vik]
+features:
+  - keys
+  - encoder
+  - underglow
+  - studio
+siblings:
+  - splitkb_halcyon_kyria_left
+  - splitkb_halcyon_kyria_right
