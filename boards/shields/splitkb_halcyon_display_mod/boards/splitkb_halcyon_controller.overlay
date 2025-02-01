@@ -1,0 +1,7 @@
+&gpio0 {
+	backlight_hog {
+		gpio-hog;
+		gpios = <27 GPIO_ACTIVE_HIGH>;
+		output-high;
+	};
+};
