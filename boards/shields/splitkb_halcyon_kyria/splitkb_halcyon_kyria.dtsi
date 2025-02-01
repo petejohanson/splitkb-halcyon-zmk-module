@@ -6,6 +6,7 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "kyria-layouts.dtsi"
+#include "vik_connector.dtsi"
 
 &splitkb_kyria_6col_layout {
     transform = <&default_transform>;

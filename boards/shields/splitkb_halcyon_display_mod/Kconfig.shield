@@ -1,0 +1,9 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config SHIELD_SPLITKB_HALCYON_DISPLAY_MOD
+    def_bool $(shields_list_contains,splitkb_halcyon_display_mod)
+    imply ZMK_DISPLAY
+    imply LV_THEME_DEFAULT_DARK
+    imply LV_USE_THEME_DEFAULT
+    select GPIO_HOGS

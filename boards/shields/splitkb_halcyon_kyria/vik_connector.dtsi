@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2021 Peter Johanson
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+	vik_conn: vik_connector {
+		compatible = "sadekbaroudi,vik-connector";
+		#gpio-cells = <2>;
+		gpio-map-mask = <0xffffffff 0xffffffc0>;
+		gpio-map-pass-thru = <0 0x3f>;
+		gpio-map
+			= <0 0 &halcyon_conn 16 0>		/* vik SDA */
+			, <1 0 &halcyon_conn 17 0>		/* vik SCL */
+			/* RGB Is Chained, <2 0 &halcyon_conn  7 0> */
+			, <3 0 &halcyon_conn 18 0>		/* vik AD_1 */
+			, <4 0 &halcyon_conn 19 0>		/* vik MOSI */
+			, <5 0 &halcyon_conn 20 0>		/* vik AD_2 */
+			, <6 0 &halcyon_conn 21 0>		/* vik CS */
+			, <7 0 &halcyon_conn 22 0>		/* vik MISO */
+			, <8 0 &halcyon_conn 23 0>		/* vik SCLK */
+			;
+	};
+};
+
+vik_i2c: &halcyon_i2c {};
+vik_spi: &halcyon_spi {
+	cs-gpios = <&halcyon_conn 21 GPIO_ACTIVE_LOW>;
+};

@@ -28,15 +28,15 @@
 			, <14 0 &gpio0 18 0>
 			, <15 0 &gpio0 21 0>
 			/* VIK Pins on Halcyon Keyboard */
-			, <16 0 &gpio0 14 0>
-			, <17 0 &gpio0 12 0>
-			, <18 0 &gpio0 15 0>
-			, <19 0 &gpio0 13 0>
-			, <20 0 &gpio0 17 0>
-			, <21 0 &gpio0 16 0>
-			, <22 0 &gpio0 27 0>
-			, <23 0 &gpio0 26 0>
-			, <24 0 &gpio0 26 0>
+			, <16 0 &gpio0 16 0>
+			, <17 0 &gpio0 17 0>
+			/* VIK RGB Pin, in theory? */
+			, <18 0 &gpio0 27 0>
+			, <19 0 &gpio0 15 0>
+			, <20 0 &gpio0 26 0>
+			, <21 0 &gpio0 13 0>
+			, <22 0 &gpio0 12 0>
+			, <23 0 &gpio0 14 0>
 			/* RGB */
 			, <25 0 &gpio0 3 0>
 			/* TX/RX */
