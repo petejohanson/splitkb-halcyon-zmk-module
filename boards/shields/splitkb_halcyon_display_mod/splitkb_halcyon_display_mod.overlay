@@ -13,6 +13,7 @@
 		reg = <0>;
 		cmd-data-gpios = <&vik_conn 0 GPIO_ACTIVE_LOW>;
 		reset-gpios = <&vik_conn 5 GPIO_ACTIVE_LOW>;
+		ready-time-ms = <40>;
 		width = <135>;
 		height = <240>;
 		x-offset = <52>;
