@@ -12,6 +12,10 @@
     transform = <&default_transform>;
 };
 
+&halcyon_serial {
+	// Comment out for slower speeds if encountering issues.
+	current-speed = <921600>;
+};
 / {
     chosen {
         zmk,kscan = &kscan0;
