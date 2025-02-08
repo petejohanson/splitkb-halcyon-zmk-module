@@ -1,6 +1,16 @@
 / {
 	chosen {
 		zephyr,display = &vik_st7789v;
+		zmk,display-led = &disp_led;
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		disp_led: disp_led {
+			gpios = <&vik_conn 3 GPIO_ACTIVE_HIGH>;
+			label = "Display LED";
+		};
 	};
 };
 

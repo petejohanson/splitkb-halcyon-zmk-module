@@ -6,4 +6,5 @@ config SHIELD_SPLITKB_HALCYON_DISPLAY_MOD
     imply ZMK_DISPLAY
     imply LV_THEME_DEFAULT_DARK
     imply LV_USE_THEME_DEFAULT
-    select GPIO_HOGS
+    # For LED control of backlight pin
+    select LED
