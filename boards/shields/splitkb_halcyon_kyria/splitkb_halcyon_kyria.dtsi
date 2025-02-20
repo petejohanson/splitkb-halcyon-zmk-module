@@ -20,7 +20,11 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &splitkb_kyria_6col_layout;
-	zmk,split-uart = &halcyon_serial;
+    };
+
+    split_config {
+        compatible = "zmk,wired-split";
+	device = <&halcyon_serial>;
     };
 
     kscan0: kscan {
