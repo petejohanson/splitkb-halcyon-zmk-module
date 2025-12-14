@@ -13,6 +13,7 @@
 };
 
 &halcyon_serial {
+	status = "okay";
 	// Comment out for slower speeds if encountering issues.
 	current-speed = <921600>;
 };

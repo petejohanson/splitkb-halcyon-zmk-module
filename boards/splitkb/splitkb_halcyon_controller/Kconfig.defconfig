@@ -3,9 +3,6 @@
 
 if BOARD_SPLITKB_HALCYON_CONTROLLER
 
-config BOARD
-	default "splitkb_halcyon_controller"
-
 config RP2_FLASH_W25Q080
 	default y
 
