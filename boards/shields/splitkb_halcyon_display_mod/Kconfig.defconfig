@@ -1,5 +1,17 @@
 
 if SHIELD_SPLITKB_HALCYON_DISPLAY_MOD
 
+config LV_Z_MEM_POOL_SIZE
+	default 8192
+
+config MAIN_STACK_SIZE
+	default 8192
+
+config SYSTEM_WORKQUEUE_STACK_SIZE
+	default 8192
+
+config ZMK_DISPLAY_BLANK_ON_IDLE
+	default y
+
 endif
 

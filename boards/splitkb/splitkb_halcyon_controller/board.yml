@@ -1,0 +1,5 @@
+board:
+  name: splitkb_halcyon_controller
+  vendor: splitkb
+  socs:
+    - name: rp2040
